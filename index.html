@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Creative-branding</title>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -174,21 +175,26 @@
 			<li><img src="img/logos/alex2.png" alt=""></li>
 		</ul>
 	</section>
-	
+
 	<section class="contact" id="contact">
 		<h1>Contact</h1>
-		<form>
-			<input name="name" id="name" value=" ">
-			<input name="email" id="email" value=" ">
-			<textarea name="message" id="message" value=" "></textarea>
-			<input type="button" name="button">
-		</form>
-		<ul>
-			<li>To contact us please use the contact form visible</li>
-			<li>When sending files, please use the following e-mail</li>
-			<li>Tomasz Mazurczak</li>
-			<li>e-mail: contact@thomsoon.com</li>
-		</ul>
+		<hr>
+		<div class="flex">
+			<form>	
+				<div class="one">
+					<input name="name" id="name" placeholder="Your name">
+					<input name="email" id="email" placeholder="Your E-mail">
+				</div>
+					<textarea name="message" id="message" placeholder="Messange"></textarea>
+					<input type="button" name="button" value="Send">
+			</form>
+			<ul>
+				<li>To contact us please use the contact form visible</li>
+				<li>When sending files, please use the following e-mail</li>
+				<li>Tomasz Mazurczak</li>
+				<li>e-mail: contact@thomsoon.com</li>
+			</ul>
+		</div>	
 	</section>
 
 	<footer>
