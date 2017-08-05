@@ -53,4 +53,56 @@ header
 		left: 40%
 		right: 40%
 nav
+	height: 60px
+	display: -webkit-flex
+	display: flex /*отображает контейнер как блочный элемент*/
+    justify-content: space-around
+    align-items: center
+
+	.nav_logo
+		font-size: 26px
+		font-weight: bold
+		
+	ul
+		li 
+			list-style-type: none
+			display: inline-block
+
+			a 
+				margin: 0px 20px
+				text-decoration: none
+				text-transform: uppercase
+				color: #3c3c3c
+			    
+			a:hover
+				color: #ada074
+.about 
+	h1
+		text-align: center
+		font-size: 34px
+
+	hr
+		color: #fff
+		width: 105px
+		margin-top: 30px
+
+	h6
+		font-size: 14px
+		text-align: center
+		color: #b0b0b0
 	
+	.about_items
+		display: flex
+		justify-content: space-around
+		align-items: center
+
+		.about_item
+			text-align: center
+			width: 25%
+
+			h2
+				margin-top: 25px
+
+			p 
+				line-height: 25px
+				color: #b0b0b0

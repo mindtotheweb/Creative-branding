@@ -43,3 +43,50 @@ header {
     top: 85%;
     left: 40%;
     right: 40%; }
+
+nav {
+  height: 60px;
+  display: -webkit-flex;
+  display: flex;
+    display-justify-content: space-around;
+    display-align-items: center; }
+  nav .nav_logo {
+    font-size: 26px;
+    font-weight: bold; }
+  nav ul li {
+    list-style-type: none;
+    display: inline-block; }
+    nav ul li a {
+      margin: 0px 20px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #3c3c3c; }
+    nav ul li a:hover {
+      color: #ada074; }
+
+.about h1 {
+  text-align: center;
+  font-size: 34px; }
+
+.about hr {
+  color: #fff;
+  width: 105px;
+  margin-top: 30px; }
+
+.about h6 {
+  font-size: 14px;
+  text-align: center;
+  color: #b0b0b0; }
+
+.about .about_items {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+  .about .about_items .about_item {
+    text-align: center;
+    width: 25%; }
+    .about .about_items .about_item h2 {
+      margin-top: 25px; }
+    .about .about_items .about_item p {
+      line-height: 25px;
+      color: #b0b0b0; }
