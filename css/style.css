@@ -30,13 +30,16 @@ header {
     font-size: 16px;
     position: absolute;
     top: 70%;
-    left: 43%; }
+    left: 40%;
+    right: 40%; }
   header .cont {
     position: absolute;
     top: 20%;
-    left: 40%;
-      left-height: 520px; }
+    left: 30%;
+    right: 30%;
+      right-height: 520px; }
   header .header_arrowDown {
     position: absolute;
     top: 85%;
-    left: 50%; }
+    left: 40%;
+    right: 40%; }
