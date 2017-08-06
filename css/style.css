@@ -1,7 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,300,100,700,900&subset=latin,latin-ext);
-placeholder {
-  color: #000000; }
-
 html, body {
   font-family: 'Lato', sans-serif;
   font-size: 15px;
@@ -10,13 +7,14 @@ html, body {
   height: 100%; }
 
 header {
-  background-color: #797979;
+  background: url("../img/background/start-page.jpg") #c0c0c0 bottom center fixed no-repeat;
   text-align: center;
   height: 100vh;
   position: relative;
   color: #fff; }
   header h1 {
-    font-size: 34px; }
+    font-size: 34px;
+    text-transform: uppercase; }
   header hr {
     color: #fff;
     width: 105px;
@@ -49,10 +47,9 @@ header {
 
 nav {
   height: 60px;
-  display: -webkit-flex;
   display: flex;
-    display-justify-content: space-around;
-    display-align-items: center; }
+  justify-content: space-around;
+  align-items: center; }
   nav .nav_logo {
     font-size: 26px;
     font-weight: bold; }
@@ -65,40 +62,43 @@ nav {
       text-decoration: none;
       text-transform: uppercase;
       color: #3c3c3c; }
+    nav ul li a.active {
+      color: #ada074; }
     nav ul li a:hover {
       color: #ada074; }
 
-.about h1 {
-  text-align: center;
-  font-size: 34px; }
-
-.about hr {
-  color: #fff;
-  width: 105px;
-  margin-top: 30px; }
-
-.about h6 {
-  font-size: 14px;
-  text-align: center;
-  color: #b0b0b0; }
-
-.about .about_items {
-  display: flex;
-  justify-content: space-around;
-  align-items: center; }
-  .about .about_items .about_item {
+.about {
+  margin: 50px 0; }
+  .about h1 {
+    text-transform: uppercase;
     text-align: center;
-    width: 25%; }
-    .about .about_items .about_item h2 {
-      margin-top: 25px;
-      font-size: 26px; }
-    .about .about_items .about_item p {
-      line-height: 25px;
-      color: #b0b0b0; }
+    font-size: 34px; }
+  .about hr {
+    color: #fff;
+    width: 105px;
+    margin-top: 30px; }
+  .about h6 {
+    font-size: 14px;
+    text-align: center;
+    color: #b0b0b0; }
+  .about .about_items {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; }
+    .about .about_items .about_item {
+      text-align: center;
+      width: 25%; }
+      .about .about_items .about_item h2 {
+        margin-top: 25px;
+        font-size: 26px; }
+      .about .about_items .about_item p {
+        line-height: 25px;
+        color: #b0b0b0; }
 
 .portfolio h1 {
   text-align: center;
-  font-size: 34px; }
+  font-size: 34px;
+  text-transform: uppercase; }
 
 .portfolio hr {
   color: #fff;
@@ -119,12 +119,13 @@ nav {
   background-color: #444;
   height: 400px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column; }
   .partners h2 {
     color: #f3f3f3;
     text-align: center;
-    font-size: 30px; }
+    font-size: 30px;
+    padding-bottom: 30px; }
   .partners ul {
     display: flex;
     justify-content: center;
@@ -137,20 +138,28 @@ nav {
       opacity: 1; }
 
 .contact {
-  position: relative; }
+  position: relative;
+  margin: 90px 0; }
   .contact .flex {
     display: flex;
     justify-content: space-around; }
+    .contact .flex ul li {
+      list-style-type: none;
+      margin: 20px 0; }
+      .contact .flex ul li .bold {
+        font-weight: bold; }
   .contact h1 {
     text-align: center;
-    font-size: 34px; }
+    font-size: 34px;
+    text-transform: uppercase; }
   .contact hr {
     color: #fff;
     width: 105px;
     margin-top: 30px; }
   .contact form {
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    font-weight: bold; }
     .contact form input {
       border: none;
       border-bottom: 1px solid;
@@ -158,7 +167,8 @@ nav {
       padding-bottom: 20px;
       text-transform: uppercase;
       color: #000000;
-      font-size: 14px; }
+      font-size: 14px;
+      outline: none; }
     .contact form input::-webkit-input-placeholder {
       color: #000; }
     .contact form input[type="button"] {
@@ -166,18 +176,45 @@ nav {
       border: none;
       text-transform: uppercase;
       text-align: center;
-      position: absolute;
-      bottom: 0px;
-      right: 40%;
-      left: 40%; }
+      margin: 0 auto;
+      margin-top: 20px;
+      font-weight: bold;
+        font-weight-outline: none; }
     .contact form textarea {
       border: none;
       border-bottom: 1px solid;
       width: 320px;
-      padding-bottom: 20px;
+      padding: 20px 0;
       text-transform: uppercase;
       color: #000000;
       background-color: #fff;
-      font-size: 14px; }
+      font-size: 14px;
+      resize: none;
+      outline: none; }
     .contact form textarea::-webkit-input-placeholder {
       color: #000; }
+
+footer {
+  background-color: #3c3c3c;
+  position: relative;
+  height: 270px; }
+  footer .logo {
+    position: absolute;
+      position-top: 15px;
+    right: 45%;
+    left: 45%; }
+  footer ul {
+    text-align: center;
+    padding-top: 150px; }
+    footer ul li {
+      list-style-type: none;
+      display: inline-block; }
+      footer ul li a {
+        text-decoration: none;
+        color: #909090;
+        font-size: 14px; }
+  footer .copyright {
+    text-align: center;
+    color: #909090;
+    font-size: 14px;
+    margin-top: 38px; }

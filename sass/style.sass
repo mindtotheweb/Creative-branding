@@ -12,20 +12,17 @@
 // :-ms-input-placeholder  /* Internet Explorer 10+ */
 // 	color: #000000
 
-placeholder
-	color: #000000
-
 html, body
-  font-family: 'Lato', sans-serif
-  font-size: 15px
-  -webkit-font-smoothing: subpixel-antialiased!important
-  color:black
-  font-weight: 400
-  height: 100%
+	font-family: 'Lato', sans-serif
+	font-size: 15px
+	-webkit-font-smoothing: subpixel-antialiased!important
+	color:black
+	font-weight: 400
+	height: 100%
 
 
 header
-	background-color: #797979
+	background: url('../img/background/start-page.jpg') #c0c0c0 bottom center fixed no-repeat
 	text-align: center
 	height: 100vh
 	position: relative
@@ -33,6 +30,7 @@ header
 	
 	h1
 		font-size: 34px
+		text-transform: uppercase	
 
 	hr
 		color: #fff
@@ -68,11 +66,10 @@ header
 		left: 40%
 		right: 40%
 nav
-	height: 60px
-	display: -webkit-flex
-	display: flex /*отображает контейнер как блочный элемент*/
-    justify-content: space-around
-    align-items: center
+	height: 60px	
+	display: flex
+	justify-content: space-around
+	align-items: center
 
 	.nav_logo
 		font-size: 26px
@@ -89,13 +86,18 @@ nav
 				text-decoration: none
 				text-transform: uppercase
 				color: #3c3c3c
-			    
+
+			a.active
+				color: #ada074
+
 			a:hover
 				color: #ada074
 .about 
+	margin: 50px 0
 	h1
+		text-transform: uppercase
 		text-align: center
-		font-size: 34px
+		font-size: 34px	
 
 	hr
 		color: #fff
@@ -109,9 +111,8 @@ nav
 	
 	.about_items
 		display: flex
-		justify-content: space-around
-		align-items: center
-
+		justify-content: center
+		margin-top: 30px 
 		.about_item
 			text-align: center
 			width: 25%
@@ -128,6 +129,7 @@ nav
 	h1
 		text-align: center
 		font-size: 34px
+		text-transform: uppercase	
 
 	hr
 		color: #fff
@@ -147,13 +149,14 @@ nav
 	background-color: #444
 	height: 400px
 	display: flex
-	justify-content: space-around
+	justify-content: center
 	flex-direction: column
 
 	h2
 		color: #f3f3f3
 		text-align: center
 		font-size: 30px
+		padding-bottom: 30px
 		
 	ul 
 		display: flex
@@ -168,14 +171,23 @@ nav
 
 .contact
 	position: relative
-
+	margin: 90px 0 
 	.flex
 		display: flex
 		justify-content: space-around
 
+		ul
+			li 
+				list-style-type: none
+				margin: 20px 0
+
+				.bold
+					font-weight: bold
+
 	h1
 		text-align: center
 		font-size: 34px
+		text-transform: uppercase	
 
 	hr
 		color: #fff
@@ -185,6 +197,7 @@ nav
 	form
 		display: flex
 		flex-direction: column
+		font-weight: bold	
 
 		input
 		    border: none
@@ -194,6 +207,7 @@ nav
 		    text-transform: uppercase
 		    color: #000000
 		    font-size: 14px
+		    outline: none
 
 		input::-webkit-input-placeholder
 			color: #000
@@ -203,21 +217,50 @@ nav
 			border: none
 			text-transform: uppercase
 			text-align: center
-			position: absolute
-			bottom: 0px
-			right: 40%
-			left: 40%
+			margin: 0 auto
+			margin-top: 20px
+			font-weight: bold
+		    outline: none
 			
 		textarea
-			    border: none
-    			border-bottom: 1px solid
-    			width: 320px
-			    padding-bottom: 20px
-			    text-transform: uppercase
-			    color: #000000
-			    background-color: #fff
-			    font-size: 14px
+		    border: none
+    		border-bottom: 1px solid
+    		width: 320px
+		    padding: 20px 0
+		    text-transform: uppercase
+		    color: #000000
+		    background-color: #fff
+		    font-size: 14px
+		    resize: none
+		    outline: none
+
 		textarea::-webkit-input-placeholder
 			color: #000
+footer
+	background-color: #3c3c3c	
+	position: relative
+	height: 270px
 
-	
+	.logo 
+		position: absolute
+    	top: 15px
+		right: 45%
+		left: 45%
+
+	ul
+		margin-top: 	
+		text-align: center
+		padding-top: 150px
+		li 
+			list-style-type: none
+			display: inline-block
+			a 
+				text-decoration: none	
+				color: #909090	
+				font-size: 14px	
+	.copyright
+		text-align: center
+		color: #909090	
+		font-size: 14px	
+		margin-top: 38px
+			
